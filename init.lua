@@ -885,6 +885,12 @@ require('lazy').setup({
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
   },
+  {
+    'typed-rocks/witt-neovim',
+    config = function()
+      require 'witt'
+    end,
+  },
   { -- Highlight, edit, and navigate code
     'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
@@ -905,8 +911,6 @@ require('lazy').setup({
         'vimdoc',
         'javascript',
         'vue',
-        'csharp',
-        'conf',
         'json',
       },
       -- Autoinstall languages that are not installed
